@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: white;
+    color: #222;
+    border-left: 7px solid #8ca080;
+    border-right: 7px solid #8ca080;
+}
+
+header{
+    height: 15vh;
+    background: #07529c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    color: white;
+}
+
+.logo-menu{
+    position: relative;
+    width: 100px;
+    line-height: 17px;
+}
+
+.logo-menu strong
+.logo-menu span{
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.logo-menu small{
+    position: absolute;
+    right: -4px;
+    top: 13px;
+    font-size: 13px;
+}
+nav{
+    display: flex;
+    gap: 75px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+main {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+}
+
+
+.texto {
+    min-width: 0;
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+.imagens {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 28px;
+    min-width: 0;
+    align-items: stretch;
+}
+
+
+.fotos-pequenas {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 22px;
+    min-width: 0;
+}
+
+
+.foto {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: white;
+}
+
+
+.fotos-pequenas .foto {
+    height: 290px;
+}
+
+
+.foto-grande {
+    height: 602px;
+}
+
+
+.foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+    .conteudo {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .imagens {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .fotos-pequenas .foto {
+        height: 220px;
+    }
+
+    .foto-grande {
+        height: 452px;
+    }
+}
+
+
+
+
+.fundo{
+    height: 10vh;
+    background: #07529c;
+    padding: 0 9%;
+}
+
+.fim{
+    text-align: center;
+    padding: 8px;
+    font-style: italic;
+    color: #8692bc;
+    font-size: 10px;
+
+}

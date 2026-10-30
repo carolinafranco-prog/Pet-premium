@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    color: #222;
+    border-left: 7px solid #8ca080;
+    border-right: 7px solid #8ca080;
+    min-height: 100vh;
+}
+
+header {
+    min-height: 15vh;
+    background: #07529c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 9%;
+    color: #fff;
+}
+
+.logo-menu {
+    position: relative;
+    width: 210px;
+    line-height: 1;
+}
+
+.logo-menu strong,
+.logo-menu span {
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.logo-menu small {
+    position: absolute;
+    right: -4px;
+    top: 13px;
+    font-size: 13px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+main {
+    width: 100%;
+    padding: 35px 3.5%;
+}
+
+.banner {
+    width: 100%;
+    min-height: 270px;
+    border: 1px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 7%;
+    overflow: hidden;
+    background: #fff;
+}
+
+.animal {
+    width: 145px;
+    height: 190px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.titulo h1 {
+    font-size: 76px;
+    line-height: 0.9;
+    font-weight: 400;
+    color: #000;
+}
+
+.atalhos {
+    width: 100%;
+    max-width: 760px;
+    min-height: 170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.atalhos a {
+    width: 116px;
+    min-height: 38px;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f7f7f7;
+    color: #111;
+    text-decoration: none;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.atalhos a:hover {
+    background: #eaeaea;
+}
+
+.pata {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 65px;
+    line-height: 1;
+    color: #333;
+}
+
+.pata img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+
+.produtos {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px 60px;
+    text-align: center;
+}
+
+
+.produtos h2 {
+    margin: 0 0 40px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.grade-produtos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 40px;
+    row-gap: 85px;
+    position: relative;
+}
+
+.grade-produtos::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    bottom: -40px;
+    left: 50%;
+    width: 1px;
+    background: #d8d8d8;
+    pointer-events: none;
+}
+
+.produto {
+    width: 100%;
+    height: 145px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+.produto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    object-fit: contain;
+}
+
+
+.fundo {
+    min-height: 10vh;
+    background: #07529c;
+    padding: 0 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fim {
+    text-align: center;
+    padding: 8px;
+    font-style: italic;
+    color: #c3d2e6;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+footer {
+    width: 100%;
+    min-height: 25px;
+    background: #07529c;
+    color: #fff;
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+/*
+@media (max-width: 600px) {
+
+    body {
+        border-left-width: 3px;
+        border-right-width: 3px;
+    }
+
+    header {
+        min-height: auto;
+        padding: 20px 15px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo-menu {
+        width: auto;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    .banner {
+        min-height: 160px;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .animal {
+        width: 25%;
+        height: 120px;
+    }
+
+    .titulo h1 {
+        font-size: clamp(24px, 7vw, 40px);
+    }
+
+    .atalhos {
+        min-height: 110px;
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .atalhos a {
+        width: auto;
+        min-width: 0;
+        flex: 1;
+        font-size: 9px;
+        padding: 8px 3px;
+    }
+
+    .pata img {
+        width: 35px;
+        height: 40px;
+    }
+
+    .pata {
+        font-size: 35px;
+    }
+
+    .produtos {
+        padding: 10px 5px 35px;
+    }
+
+    .produtos h2 {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .grade-produtos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 15px;
+        row-gap: 25px;
+    }
+
+    .grade-produtos::after {
+        display: none;
+    }
+
+    .produto {
+        height: 140px;
+    }
+
+    .fundo {
+        min-height: 60px;
+        padding: 10px;
+    }
+
+    .fim {
+        font-size: 9px;
+    }
+}
+*/
